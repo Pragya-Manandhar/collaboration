@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url(image/background.jpg);
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.container{
+    margin: auto;
+    width: 35%;
+    max-width: 90%;
+    height: 40%;
+}
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    background: white;
+    border-radius: 3%;
+    box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
+}
+.container form .logo img{
+    margin-left: 15%;
+    width: 65%;
+    height: 10%;
+
+}
+.container form H1{
+    text-align: center;
+    margin-bottom: 10%;
+    color: #222;
+
+}
+/* css for input */
+.container form .formgroup input{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* css for lable  */
+.container form .formgroup label{
+    font-size: 100%;
+}
+.container form .form-control{
+    width: 90%;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin: 25px 20px;
+    padding: 0 10px;
+}
+.container form .btn{
+    margin-left: 20%;
+    transform: translateX(-150%);
+    transform: translateY(25%);
+    width: 60%;
+    height: 50px;
+    border: 1.5px solid black;
+    background: #27a327;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.container form .btn:hover{
+    opacity: .8;
+}
