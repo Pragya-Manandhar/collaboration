@@ -1,0 +1,173 @@
+/*-----------------contact us---------------*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #fff;
+    font-size: 14px;
+    font-family: 'Crete Round', serif;
+
+
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    opacity: 5;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a {
+    color: rgb(19, 224, 19);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    background: whitesmoke;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #161515;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+
+}
+
+
+
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(10, 10, 10);
+    outline: none;
+    padding: 10px;
+}
+
+.label {
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(10, 10, 10);
+    text-decoration: solid;
+
+}
+
+button {
+    background: #1c00b5;
+    width: 10%;
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+    color: rgb(10, 10, 10);
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
