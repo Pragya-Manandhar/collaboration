@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+.body {
+    background: #55ffe5;
+    font-size: 14px;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/header.jpg);
+    ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    opacity: 5;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a {
+    color: rgb(234, 244, 247);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.text-box {
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 60px;
+    text-align: center;
+
+
+}
+
+.text-box p {
+    font-size: 18px;
+    color: #ffef96;
+    margin: 10px 0 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/*---facilities--*/
+
+.Our Facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.Our Facilities-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+
+.Our Facilities-col img {
+    width: 100%;
+
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+p {
+
+    color: rgb(48, 47, 47);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.row {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+
+
+
+
+
+/*----students story css---*/
+
+
+
+
+.Story {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+
+}
+
+
+
+
+.Story-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Story-col img {
+    width: 100%;
+}
+
+h4 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*-----------------about us---------------*/
+.sub-header {
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+}
+
+.about us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+
+}
+
+.about-col img {
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.about-col h1 {
+    padding-top: 0;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+
+}
+
+.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: f44336
+}
+
+.red-btn:hover {
+    color: black;
+
+}
+
+
+/*-----------------contact us---------------*/
+.section-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/contactus.jpg);
+    ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    background: #fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #0abe37;
+    color: #fff;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+input {
+    width: 50%;
+    border-style: inset;
+    border-bottom: 1px solid #ccc;
+    outline-style: hidden;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    float: right;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+.label {
+    margin-bottom: inherit;
+    width: 100%;
+    display: flex;
+    color: #107e28;
+    align-items: center;
+}
+
+button {
+    background: #1c00b5;
+    width: 10%;
+    border: none;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 55px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+    color: rgb(31, 226, 25);
+
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
