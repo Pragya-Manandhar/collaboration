@@ -180,7 +180,12 @@ h3 {
 .testimonial-center {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 6rem;
+    gap: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
 }
 
 .testimonial {
