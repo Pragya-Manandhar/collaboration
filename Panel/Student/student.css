@@ -28,17 +28,14 @@ margin-left: 10%;
 }
 .events{
   color: white;
-  background-color:#27a327;
+  background-color:grey;
   border-radius: 5px;
   box-shadow: 8px 8px rgba(0,0,0, 0.3);
   width: 25%;
   margin: 25px;
   padding:20px;
   
-}
-.main .events h1{
-    text-decoration-line: underline;
-    text-decoration-color: #0080ff	;
+
 }
 
 .main .events li a{
