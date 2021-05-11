@@ -7,6 +7,11 @@
 
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
 
 .body {
     background: #55ffe5;
@@ -22,6 +27,23 @@
     background-size: cover;
     position: relative;
     opacity: 1;
+}
+
+.logo {
+    position: absolute;
+    font-size: 70px;
+    border: 7px solid whitesmoke;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    transition: 1s;
+}
+
+.logo:hover {
+    color: lime;
+    border: 7px solid lime;
+    transform: scale(1.1);
+
 }
 
 nav {
@@ -92,8 +114,9 @@ nav img {
 
 .text-box p {
     font-size: 18px;
-    color: #ffef96;
+    color: rgb(235, 224, 224);
     margin: 10px 0 40px;
+    font-style: italic
 }
 
 .hero-btn {
@@ -128,12 +151,13 @@ nav img {
 
 .Our-Facilities-col {
     flex-basis: 31%;
-    background: #fff3f3;
+    background: limegreen;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     border: 2px solid black;
-    padding-right: 2px;
+
+    padding-inline: 4px;
 
 }
 
@@ -146,16 +170,17 @@ nav img {
 }
 
 
-h1 {
+.Our-Facilities h1 {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
+    color: limegreen;
 
 }
 
 p {
 
-    color: rgb(48, 47, 47);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
