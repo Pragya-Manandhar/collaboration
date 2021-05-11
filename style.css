@@ -121,6 +121,7 @@ nav img {
     text-align: center;
     padding-top: 100px;
 
+
 }
 
 .Our Facilities-col {
@@ -133,8 +134,13 @@ nav img {
 
 }
 
+Our Facilities-col {
+    box-sizing: border-box;
+}
+
 .Our Facilities-col img {
     width: 100%;
+
 
 }
 
@@ -211,7 +217,7 @@ h3 {
     left: 50%;
     font-size: 12rem;
     font-family: sans-serif;
-    color: #0f0f0f;
+    color: #0e0d0d;
     line-height: 1;
     transform: translate(-50%, 0);
 }
