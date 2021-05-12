@@ -4,12 +4,29 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Baloo Bhai 2';
     
 }
 
 header {
     font-family: sans-serif;
+}
+.logo {
+    position: absolute;
+    font-size: 36px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    color: white;
+    border-radius: 20%;
+    width: 70px;
+    transition: 1s;
+}
+
+.logo:hover {
+    color: lime;
+    border: 5px solid lime;
+    transform: scale(1.1);
+
 }
 
 body {
