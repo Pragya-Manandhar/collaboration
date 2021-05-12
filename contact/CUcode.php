@@ -15,21 +15,24 @@ if(isset($_POST['submit'])){
     $message=$_POST['message'];
 
 
-    $query = "INSERT INTO `contact`INSERT INTO `contact`(`Name`, `Phone`, `Email`, `Course`, `Message`) VALUES ('$name','$phone','$email','$course','$message')";
+    $query = "INSERT INTO `contact` (`Name`, `Phone`, `Email`, `Course`, `Message`) VALUES ('$name','$phone','$email','$course','$message')";
     $result = mysqli_query($conn,$query);
 
 
 
 
-    if($result==true){
+    if($query==true){
         echo"<script>alert('Query Successfully Submitted. Thank You!')</script>";
+        exit();       
+        
         
     }
     else{
         echo"<script>alert('Something Went Wrong')</script>";
         
     }
-
+    
+    header('location:contact us.php');
 }
 
 ?>

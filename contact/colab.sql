@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2021 at 08:34 AM
+-- Generation Time: May 12, 2021 at 04:10 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -31,20 +31,13 @@ SET time_zone = "+00:00";
 CREATE TABLE `contact` (
   `id` int(11) NOT NULL,
   `Name` varchar(50) NOT NULL,
-  `Phone` int(30) NOT NULL,
+  `Phone` int(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `Course` varchar(50) NOT NULL,
-  `Message` text NOT NULL,
-  `datetime` datetime NOT NULL DEFAULT current_timestamp(),
-  `status` int(11) NOT NULL DEFAULT 1
+  `Course` varchar(20) NOT NULL,
+  `Message` varchar(200) NOT NULL,
+  `datetime` int(20) NOT NULL DEFAULT current_timestamp(),
+  `status` int(10) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `Name`, `Phone`, `Email`, `Course`, `Message`, `datetime`, `status`) VALUES
-(0, '0', 0, '', '', '', '2021-05-01 11:56:42', 1);
 
 --
 -- Indexes for dumped tables
@@ -55,6 +48,16 @@ INSERT INTO `contact` (`id`, `Name`, `Phone`, `Email`, `Course`, `Message`, `dat
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
