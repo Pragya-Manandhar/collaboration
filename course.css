@@ -255,6 +255,7 @@ p {
     padding: 20px 12px;
     transition: 0.5s;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 h3 {
