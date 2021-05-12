@@ -34,7 +34,7 @@ h1 {
     font-size: 70px;
     border: 7px solid whitesmoke;
     color: white;
-    border-radius: 50%;
+    border-radius: 20%;
     width: 70px;
     transition: 1s;
 }
@@ -156,11 +156,15 @@ nav img {
     margin-bottom: 5%;
     padding: 20px 12px;
     border: 2px solid black;
-
+    transition: 0.5s;
     padding-inline: 4px;
+    box-sizing: border-box;
 
 }
 
+.Our-Facilities-col::after {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
 
 
 .Our Facilities-col img {
