@@ -1,9 +1,12 @@
 <?php
+session_start();
+?>
+<?php
 //connection of database.
 $servername = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "login";
+$dbname = "CW";
 $conn = mysqli_connect($servername, $user, $pass, $dbname);
 
 
@@ -15,7 +18,7 @@ if(isset($_POST['submit'])){
 
     if(mysqli_num_rows($result)>0){
         $_SESSION['email']=$_POST['email'];
-        header('location:index.php');
+        header('location:panel.php');
     }
     else{
         echo"Invalid email or password";

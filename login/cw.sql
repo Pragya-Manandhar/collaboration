@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2021 at 11:19 AM
+-- Generation Time: May 12, 2021 at 04:22 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `login`
+-- Database: `cw`
 --
 
 -- --------------------------------------------------------
@@ -30,18 +30,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `role` varchar(20) NOT NULL
+  `role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`id`, `email`, `password`, `role`) VALUES
-(1, 'naresh@admin.com', 'admin123', 'admin'),
-(2, 'student@student.com', 'student', 'student');
+INSERT INTO `login` (`id`, `fullname`, `email`, `password`, `role`) VALUES
+(1, 'Ritesh Adhikari', 'ritesh@admin.com', 'admin123', 'admin'),
+(2, 'Naresh Shrestha', 'naresh@student.com', 'student123', 'student');
 
 --
 -- Indexes for dumped tables
