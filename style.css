@@ -339,6 +339,8 @@ h3 {
 
 /*--footer--*/
 
+/*--footer--*/
+
 
 main {
     width: 60%;
@@ -379,7 +381,6 @@ footer {
     color: #fff;
     display: grid;
     place-items: center;
-    padding: 2em;
     font-size: 1.2rem;
 }
 
@@ -388,6 +389,10 @@ footer {
 /* Sticky Footer Styling */
 body {
     min-height: 100vh;
+}
+
+.sticky-footer p {
+    color: white;
 }
 
 .sticky-footer {
