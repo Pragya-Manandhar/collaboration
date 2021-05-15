@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2';
+}
+header{
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+
+}
+.welcome{
+    box-sizing: content-box;
+    background:url(images/bg2.png);
+    width: 600px;
+    color: wheat;
+    border-radius: 5px;
+	position: absolute;
+	top: 45%;
+	left:50%;
+	transform: translate(-50%,-50%);
+  
+}
+.colorchange{
+	animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+	0%{color:red;}
+    10%{color:blue;}
+	25%{color:purple;}
+	50%{color:white;}
+    70%{color:green;}
+	100%{color:purple;}
+    
+}
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+   
+}
+body{
+    min-height: 10vh;
+    background-image: url(Images/bg.jpg);
+    
+
+}
+.sidenav{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #27a327;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.sidenav:hover{
+    width: 300px;
+}
+.sidenav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.sidenav ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.sidenav ul li:hover{
+    background: #a3f00b;
+}
+.sidenav ul li a{
+    position: relative;
+    display:block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+
+}
+.sidenav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.sidenav ul li a .icon .fa{
+    font-size: 24px;
+}
+.sidenav ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
