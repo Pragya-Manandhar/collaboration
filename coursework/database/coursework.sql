@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2021 at 06:47 AM
+-- Generation Time: May 18, 2021 at 03:51 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -35,20 +35,9 @@ CREATE TABLE `contact` (
   `Email` varchar(50) NOT NULL,
   `Course` varchar(20) NOT NULL,
   `Message` varchar(200) NOT NULL,
-  `datetime` int(20) NOT NULL DEFAULT current_timestamp(),
+  `datetime` date NOT NULL DEFAULT current_timestamp(),
   `status` int(10) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `Name`, `Phone`, `Email`, `Course`, `Message`, `datetime`, `status`) VALUES
-(1, 'Naresh Shrestha', 2147483647, 'admin@admin.com', 'BIT', 'hi', 2147483647, 1),
-(2, 'ritesh', 2147483647, 'naresh@student.com', 'BIT', 'hi', 2147483647, 1),
-(3, 'Naresh Shrestha', 2147483647, 'np03a190283@heraldcollege.edu.np', 'BIT', 'hi', 2147483647, 1),
-(4, 'Naresh Shrestha', 2147483647, 'admin@admin.com', '', '', 2147483647, 1),
-(5, 'ritesh', 2147483647, 'naresh@student.com', '', '', 2147483647, 1);
 
 -- --------------------------------------------------------
 
@@ -96,7 +85,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `login`

@@ -27,7 +27,7 @@
                       <ul>
                           <li><a href="../index.html">Home</a></li>
                           <li><a href="../gallery.html">Gallery</a></li>
-                          <li><a href="contact_us.php">Contact Us</a></li>
+                          <li><a href="contact us.php">Contact Us</a></li>
                           <li><a href="../course.html">Course</a></li>
                           <li><a href="../events.html">Events</a></li>
                       
@@ -52,7 +52,7 @@
                                 echo '<div class="alert alert-danger">'.$Msg.'</div>';
                             }
 
-                            else
+                            if(isset($_GET['success']))
                             {
                                 $Msg = " Your Message Has Been Sent ";
                                 echo '<div class="alert alert-success">'.$Msg.'</div>';
